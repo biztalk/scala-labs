@@ -83,8 +83,8 @@ class OOExerciseTest extends Specification {
     "implicitly convert from euro to dollar" in {
       skipped("Uncomment and fix me")
       //      val e: Euro = new Dollar(1, 5)
-      //      e.euro ==== 1
-      //      e.cents ==== 42
+      //      e.euro ==== 0
+      //      e.cents ==== 77
     }
   }
   "Exercise 5: Implicit parameter" should {
