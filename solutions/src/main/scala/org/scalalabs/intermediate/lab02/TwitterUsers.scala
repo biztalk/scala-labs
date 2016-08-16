@@ -24,7 +24,9 @@ object TwitterUsers {
   }
 
   def thatAreInBothLists(firstList: List[TwitterUser], secondList: List[TwitterUser]): List[TwitterUser] = {
-    firstList intersect secondList
+    firstList.filter(u1 =>
+      secondList.exists(u2 =>
+        u2.screen_name == u1.screen_name))
   }
 
   private def compareByFollowersCount(firstUser: TwitterUser, secondUser: TwitterUser): Boolean = {
